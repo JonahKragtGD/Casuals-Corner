@@ -1,0 +1,346 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+body::-webkit-scrollbar-track {
+  background: #2c3e50;
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+:root {
+  /* Colors */
+  --bg-color: #e7eafb;
+  --primary: #1100ff;
+  --hover: #ff0000;
+ 
+  /* Fonts */
+  --h1-font: 2.2rem;
+  --h2-font: 1.1rem;
+  --p-font: 0.9rem;
+  --spacing: 1px;
+  /* Margins */
+  --m-1: 0.4rem;
+  --m-4: 2rem;
+}
+h1 {
+    color: #f00;
+}
+.Subtitle {
+  padding-top: 150px;
+}
+h1,h2,h3,h4,h5,h6 {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 800px;
+    font-size: 1.5rem;
+  }
+
+html {
+  background: #131410;
+  color: #fff;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: auto;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-color);
+  padding: 18px 30px 18px 30px;
+  box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
+}
+
+[data-component="slideshow"] .slide {
+	display: none;
+  text-align: center;
+  padding-top:120px ;
+}
+
+[data-component="slideshow"] .slide.active {
+	display: block;
+  
+  
+}
+.header-icon {
+  height: 84px;
+  align-items: center;
+  justify-content: center;
+  display: block;
+}
+.logo {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary);
+  }
+  .navbar {
+    display: flex;
+    
+  }
+  .navbar a {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    color: #000000;
+    font-weight: 500;
+  }
+  header .navbar a:hover {
+    background: var(--primary);
+    color: #782700;
+  }
+  #menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+  }
+.p-right {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    float: right; 
+    width: 500px;
+    box-shadow: 2px 2px #fff;
+    background-color: #131410;
+    color: #fff;
+    padding: 10px;
+}
+.p-left {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    float: left; 
+    width: 500px;
+    box-shadow: 2px 2px #fff;
+    background-color: #131410;
+    color: #fff;
+    padding: 10px;
+}
+.sample {
+    display: flex;
+    
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: auto;
+}
+.pic {
+    height: 300px;
+}
+  .contact {
+  flex-direction: column;
+}
+  .contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .contact-info {
+    max-width: 500px;
+  }
+  .info-box {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  .info-box i {
+    font-size: 20px;
+    color: var(--primary);
+  }
+  .info-box p {
+    margin-left: 1rem;
+    font-weight: 400;
+  }
+  .social {
+
+    height: 40px;
+  }
+  .social a {
+    margin-right: 1rem;
+  }
+  footer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #131410;
+    padding: 10px;
+}
+  /* Making Responsive */
+ 
+@media (max-width: 820px) {
+    :root {
+      --h1-font: 2rem;
+      --h2-font: 1rem;
+      --m-4: 1.4rem;
+    }
+    header {
+      padding: 13px 65px;
+    }
+  
+    .about {
+      flex-direction: column;
+    }
+    .about-img {
+      width: 240px;
+      height: 300px;
+    }
+    .p-box {
+      flex: 1;
+    }
+    .skills-content {
+      flex-direction: column;
+    }
+    .container {
+      padding: 10px 20px;
+      object-fit: contain;
+
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    #menu-icon {
+      display: initial;
+      color: #222435;
+    }
+    header .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background: var(--bg-color);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition: 0.5s ease;
+    }
+    header .navbar.active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .navbar a {
+      margin: 1rem;
+      padding: 1.5rem;
+      display: block;
+      background: #fff;
+      border-left: 4px solid #222435;
+    }
+    .home {
+      background: #e7eafb;
+      justify-content: center;
+    }
+    .home-text {
+      max-width: 410px;
+    }
+    .contact-content {
+      flex-direction: column;
+    }
+    .container {
+      padding: 10px 20px;
+      object-fit: contain;
+    }
+
+  }
+  
+  
+  @media (max-width: 670px) {
+    header {
+      padding: 10px 34px;
+    }
+    section {
+      padding: 50px 34px;
+    }
+    .skills-img {
+      width: 320px;
+    }
+    .container {
+      padding: 10px 10px;
+    }
+    .process-photo {
+      height: 200px;
+    }
+    .process-photo-1 {
+      height: 50px;
+    }
+    .process-photo-prompt {
+      height: 100px;
+    }
+    .final-photo {
+      height: 200px;
+    }
+    .summary {
+      padding: 10px;
+    }
+    .process {
+      padding: 10px;
+    }
+    .final {
+      padding: 10px;
+    }
+  }
+  
+  
+  @media (max-width: 400px) {
+    .home-text {
+      max-width: 225px;
+    }
+    .skills-img {
+      width: 280px;
+    }
+    .about-text {
+      margin-top: 1rem;
+    }
+    .container {
+      padding: 10px 20px;
+    }
+    .process-photo {
+      height: 180px;
+    }
+    .process-photo-1 {
+      height: 50px;
+    }
+    .process-photo-flag {
+      height: 100px;
+    }
+    .final-photo {
+      height: 150px;
+    }
+
+  }
