@@ -233,7 +233,7 @@ header {
 
     }
     .sample {
-      overflow-wrap: normal;
+      max-width: 75%;
     }
   }
   
